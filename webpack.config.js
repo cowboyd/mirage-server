@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    app: './lib/mirage-server.js'
+    app: './lib/index.js'
   },
 
   output: {
@@ -21,7 +21,8 @@ module.exports = {
 
   resolve: {
     alias: {
-      qunit: 'qunitjs'
+      qunit: path.resolve(__dirname, 'tests/qunit-shim.js'),
+      'mirage-server': path.resolve(__dirname, 'lib/index.js')
     }
   },
 

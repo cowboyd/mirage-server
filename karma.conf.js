@@ -10,6 +10,7 @@ module.exports = function(config) {
 
     // files to watch
     files: [
+      { pattern: 'lib/**/*.js', served: false, included: false },
       'tests/**/*-test.js'
     ],
 
