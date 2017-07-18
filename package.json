@@ -1,0 +1,40 @@
+{
+  "name": "mirage-server",
+  "version": "0.0.1",
+  "description": "A client-side server to develop, test and prototype your app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cowboyd/mirage-server.git"
+  },
+  "keywords": [
+    "test",
+    "mock",
+    "server",
+    "xhr",
+    "xmlhttprequest",
+    "rest",
+    "graphql",
+    "fetch",
+    "react",
+    "ember",
+    "angular"
+  ],
+  "author": "Frontside Engineering <engineering@frontside.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cowboyd/mirage-server/issues"
+  },
+  "homepage": "https://github.com/cowboyd/mirage-server#readme",
+  "devDependencies": {
+    "karma": "^1.7.0",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-qunit": "^1.2.1",
+    "karma-webpack": "^2.0.4",
+    "qunit": "^1.0.0",
+    "webpack": "^3.3.0"
+  }
+}
