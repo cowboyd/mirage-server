@@ -4,6 +4,7 @@
   "description": "A client-side server to develop, test and prototype your app.",
   "main": "index.js",
   "scripts": {
+    "start": "karma start",
     "test": "karma start --single-run"
   },
   "repository": {
@@ -30,7 +31,11 @@
   },
   "homepage": "https://github.com/cowboyd/mirage-server#readme",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2016": "^6.24.1",
     "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
     "karma-firefox-launcher": "^1.0.1",
     "karma-qunit": "^1.2.1",
     "karma-webpack": "^2.0.4",
