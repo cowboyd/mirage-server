@@ -1,4 +1,4 @@
-import { singularize, pluralize } from 'ember-cli-mirage/utils/inflector';
+import { singularize, pluralize } from 'mirage-server';
 
 import {module, test} from 'qunit';
 

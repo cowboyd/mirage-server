@@ -1,23 +1,23 @@
-import Mirage from 'ember-cli-mirage';
-import { trait } from 'ember-cli-mirage';
+import { Factory } from 'mirage-server';
+import { trait } from 'mirage-server';
 
 import {module, test} from 'qunit';
 
 module('Unit | Factory');
 
 test('it exists', function(assert) {
-  assert.ok(Mirage.Factory);
+  assert.ok(Factory);
 });
 
 test('the base class builds empty objects', function(assert) {
-  let f = new Mirage.Factory();
+  let f = new Factory();
   let data = f.build();
 
   assert.deepEqual(data, {});
 });
 
 test('a noop extension builds empty objects', function(assert) {
-  let EmptyFactory = Mirage.Factory.extend();
+  let EmptyFactory = Factory.extend();
   let f = new EmptyFactory();
   let data = f.build();
 
@@ -25,7 +25,7 @@ test('a noop extension builds empty objects', function(assert) {
 });
 
 test('it works with strings, numbers and booleans', function(assert) {
-  let AFactory = Mirage.Factory.extend({
+  let AFactory = Factory.extend({
     name: 'Sam',
     age: 28,
     alive: true
@@ -38,7 +38,7 @@ test('it works with strings, numbers and booleans', function(assert) {
 });
 
 test('it supports inheritance', function(assert) {
-  let PersonFactory = Mirage.Factory.extend({
+  let PersonFactory = Factory.extend({
     species: 'human'
   });
   let ManFactory = PersonFactory.extend({
@@ -58,7 +58,7 @@ test('it supports inheritance', function(assert) {
 });
 
 test('it can use sequences', function(assert) {
-  let PostFactory = Mirage.Factory.extend({
+  let PostFactory = Factory.extend({
     likes(i) {
       return 5 * i;
     }
@@ -73,7 +73,7 @@ test('it can use sequences', function(assert) {
 });
 
 test('it can reuse static properties', function(assert) {
-  let BazFactory = Mirage.Factory.extend({
+  let BazFactory = Factory.extend({
     foo: 5,
     bar(i) {
       return this.foo * i;
@@ -89,7 +89,7 @@ test('it can reuse static properties', function(assert) {
 });
 
 test('it can reuse dynamic properties', function(assert) {
-  let BazFactory = Mirage.Factory.extend({
+  let BazFactory = Factory.extend({
     foo(i) {
       return 5 * i;
     },

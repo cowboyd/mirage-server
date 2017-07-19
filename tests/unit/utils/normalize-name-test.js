@@ -1,5 +1,5 @@
-import { toCollectionName, toModelName } from 'ember-cli-mirage/utils/normalize-name';
-import Inflector from 'ember-inflector';
+import { toCollectionName, toModelName } from 'mirage-server';
+import Inflector from 'inflected';
 
 import {module, test} from 'qunit';
 

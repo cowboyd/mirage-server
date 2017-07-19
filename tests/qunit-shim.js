@@ -1,9 +1,10 @@
 if (!QUnit) {
-  throw new Error('QUnit must be loaded. globally');
+  throw new Error('Uh, no. Come back after you have taken the `qunitjs` file, put it in a script tag and put that into a DOM somewhere');
 }
 
 export const test = QUnit.test;
 export const assert = QUnit.assert;
 
+// because hey, the transpiled code declares `module`
 const _module = QUnit.module;
 export {_module as module };

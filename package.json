@@ -41,5 +41,10 @@
     "karma-webpack": "^2.0.4",
     "qunit": "^1.0.0",
     "webpack": "^3.3.0"
+  },
+  "dependencies": {
+    "faker": "^4.1.0",
+    "inflected": "^2.0.2",
+    "lodash": "^4.17.4"
   }
 }
