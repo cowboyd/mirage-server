@@ -63,6 +63,15 @@ module.exports = function(config) {
       require('karma-webpack'),
       require('karma-chrome-launcher'),
       require('karma-mocha-reporter')
-    ]
+    ],
+
+    // enable the browser UI
+    client: {
+      clearContext: false,
+      qunit: {
+        showUI: true,
+        testTimeout: 5000
+      }
+    }
   });
 };
