@@ -6,17 +6,17 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['qunit'],
+    frameworks: ['qunit', 'jquery-3.2.1'],
 
     // files to watch
     files: [
       { pattern: 'lib/**/*.js', served: false, included: false },
-      'tests/**/*-test.js'
+      'tests/index.js'
     ],
 
     // processors per file
     preprocessors: {
-      'tests/**/*-test.js': ['webpack']
+      'tests/index.js': ['webpack']
     },
 
     // test results reporter to use
@@ -60,6 +60,7 @@ module.exports = function(config) {
     // enable our plugins
     plugins: [
       require('karma-qunit'),
+      require('karma-jquery'),
       require('karma-webpack'),
       require('karma-chrome-launcher'),
       require('karma-mocha-reporter')

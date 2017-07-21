@@ -22,6 +22,7 @@ module.exports = {
   resolve: {
     alias: {
       qunit: path.resolve(__dirname, 'tests/qunit-shim.js'),
+      jquery: path.resolve(__dirname, 'tests/jquery-shim.js'),
       'mirage-server': path.resolve(__dirname, 'lib/index.js')
     }
   },
