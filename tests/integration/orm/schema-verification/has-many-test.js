@@ -1,6 +1,5 @@
-import { Model, hasMany } from 'mirage-server';
+import { Model, hasMany, Db } from 'mirage-server';
 import { Schema } from 'mirage-server';
-import Db from 'ember-cli-mirage/db';
 import { module, test } from 'qunit';
 
 module('Integration | ORM | Schema Verification | Has Many');

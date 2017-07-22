@@ -1,6 +1,4 @@
-import { Model, belongsTo } from 'mirage-server';
-import { Schema } from 'mirage-server';
-import Db from 'ember-cli-mirage/db';
+import { Schema, Model, Db, belongsTo } from 'mirage-server';
 
 /*
   A model with a belongsTo association can be in six states

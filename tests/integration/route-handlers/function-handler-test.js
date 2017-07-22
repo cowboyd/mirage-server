@@ -1,12 +1,8 @@
 import { module, test } from 'qunit';
-import { Model, Collection, Serializer } from 'mirage-server';
-import Ember from 'ember';
-import Server from 'mirage-server';
-import Response from 'ember-cli-mirage/response';
-import FunctionRouteHandler from 'ember-cli-mirage/route-handlers/function';
+import Server, { Response, Model, Collection, Serializer, FunctionRouteHandler } from 'mirage-server';
 import _uniqBy from 'lodash/uniqBy';
-
-const { RSVP: { Promise } } = Ember;
+import $ from 'jquery';
+console.log("$ = ", $.fn.jquery);
 
 module('Integration | Route handlers | Function handler', {
   beforeEach() {

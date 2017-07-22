@@ -1,6 +1,4 @@
-// import { Model, belongsTo } from 'mirage-server';
-// import { Schema } from 'mirage-server';
-// import Db from 'ember-cli-mirage/db';
+// import { Schema, Db, Model, belongsTo } from 'mirage-server';
 import { module, test } from 'qunit';
 
 module('Integration | ORM | Belongs To | Misc');

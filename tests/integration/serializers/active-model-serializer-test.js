@@ -1,6 +1,5 @@
-import { ActiveModelSerializer, Model, hasMany, belongsTo } from 'mirage-server';
+import { ActiveModelSerializer, Model, hasMany, belongsTo, Db } from 'mirage-server';
 import { Schema } from 'mirage-server';
-import Db from 'ember-cli-mirage/db';
 import SerializerRegistry from 'ember-cli-mirage/serializer-registry';
 import { module, test } from 'qunit';
 

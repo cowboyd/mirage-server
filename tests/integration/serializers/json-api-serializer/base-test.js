@@ -1,5 +1,4 @@
-import { Schema } from 'mirage-server';
-import Db from 'ember-cli-mirage/db';
+import { Schema, Db } from 'mirage-server';
 import SerializerRegistry from 'ember-cli-mirage/serializer-registry';
 import { Model, JSONAPISerializer } from 'mirage-server';
 import { module, test } from 'qunit';
