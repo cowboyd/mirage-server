@@ -6,7 +6,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['qunit', 'jquery-3.2.1'],
+    frameworks: ['qunit', 'jquery-2.1.4'],
 
     // files to watch
     files: [
