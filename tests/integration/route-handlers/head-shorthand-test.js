@@ -2,7 +2,8 @@ import { module, test } from 'qunit';
 import {
   Model,
   JSONAPISerializer,
-  Response
+  Response,
+  HeadShorthandRouteHandler
 } from 'mirage-server';
 import Server from 'mirage-server';
 
