@@ -4,6 +4,7 @@ if (!QUnit) {
 
 export const test = QUnit.test;
 export const assert = QUnit.assert;
+export const skip = QUnit.skip;
 
 // because hey, the transpiled code declares `module`
 const _module = QUnit.module;

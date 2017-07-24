@@ -1,7 +1,5 @@
 import {module, test} from 'qunit';
-import { Model, ActiveModelSerializer } from 'mirage-server';
-import { camelize } from 'ember-cli-mirage/utils/inflector';
-import Server from 'mirage-server';
+import Server, { Model, ActiveModelSerializer, camelize } from 'mirage-server';
 
 module('Integration | Server | Customized normalize method', {
   beforeEach() {

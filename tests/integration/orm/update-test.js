@@ -1,5 +1,4 @@
-import { Schema, Db } from 'mirage-server';
-import Model from 'ember-cli-mirage/orm/model';
+import { Schema, Db, Model } from 'mirage-server';
 import {module, test} from 'qunit';
 
 module('Integration | ORM | update', {

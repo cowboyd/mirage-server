@@ -1,7 +1,4 @@
-import { Schema, Db } from 'mirage-server';
-import SerializerRegistry from 'ember-cli-mirage/serializer-registry';
-import { Model, JSONAPISerializer } from 'mirage-server';
-import { underscore } from 'ember-cli-mirage/utils/inflector';
+import { Schema, Model, Db, SerializerRegistry, JSONAPISerializer, underscore } from 'mirage-server';
 import { module, test } from 'qunit';
 
 module('Integration | Serializers | JSON API Serializer | Key Formatting', {

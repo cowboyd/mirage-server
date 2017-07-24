@@ -1,6 +1,5 @@
 import { module, test } from 'qunit';
-import { Schema, Db } from 'mirage-server';
-import SerializerRegistry from 'ember-cli-mirage/serializer-registry';
+import { Schema, Db, SerializerRegistry } from 'mirage-server';
 import { Serializer, Model, hasMany } from 'mirage-server';
 
 module('Integration | Serializers | Base | Serialize ids', {

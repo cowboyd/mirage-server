@@ -1,8 +1,6 @@
-import { RestSerializer, Db } from 'mirage-server';
+import { RestSerializer, Db, Model, SerializerRegistry } from 'mirage-server';
 import { hasMany, belongsTo } from 'mirage-server';
 import { Schema } from 'mirage-server';
-import Model from 'ember-cli-mirage/orm/model';
-import SerializerRegistry from 'ember-cli-mirage/serializer-registry';
 import { module, test } from 'qunit';
 
 module('Integration | Serializer | RestSerializer', {

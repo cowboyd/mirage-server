@@ -1,7 +1,5 @@
-import { Model, hasMany, Db } from 'mirage-server';
+import { Serializer, SerializerRegistry, Model, hasMany, Db } from 'mirage-server';
 import { Schema } from 'mirage-server';
-import SerializerRegistry from 'ember-cli-mirage/serializer-registry';
-import Serializer from 'ember-cli-mirage/serializer';
 import { module, test } from 'qunit';
 
 module('Integration | Serializers | Base | Associations | Sideloading Assorted Collections', {

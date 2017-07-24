@@ -5,7 +5,6 @@ import {
   Response
 } from 'mirage-server';
 import Server from 'mirage-server';
-import HeadShorthandRouteHandler from 'ember-cli-mirage/route-handlers/shorthands/head';
 
 module('Integration | Route Handlers | HEAD shorthand', {
   beforeEach() {
