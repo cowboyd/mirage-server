@@ -1,7 +1,5 @@
 ## Mirage Server
 
-[![Build Status](https://travis-ci.org/cowboyd/mirage-server.svg?branch=master)](https://travis-ci.org/cowboyd/mirage-server)
-
 A client-side server to develop, test and prototype your app.
 
 > Note: This repository has been archived in favor of https://github.com/miragejs/server
